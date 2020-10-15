@@ -19,10 +19,9 @@ img {
 :root {
     --primary-text-color: #212121;
     --hover-color: #2196f3;
-    --primary-background-color: #fff;
     --secondary-background-color: #2f303a;
     --secondary-text-color: #757575;
-    --footer-color: #fff;
+    --white-color: #fff;
 }
 
 body{
@@ -33,7 +32,7 @@ body{
     line-height: 1.14;
 
     color: var(--primary-text-color);
-    background-color: var(--primary-background-color);
+    background-color: var(--white-color);
 }
 a{
     color: inherit;
@@ -129,13 +128,27 @@ h3 {
     font-size: 16px;
 }
 
+/** Portfolio page **/
+.category-nav-link{
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 6px 22px;
+    background-color: #F5F4FA;
+}
+.category-nav-link:hover,
+.category-nav-link:focus {
+    color: var(--white-color);
+    background-color: var(--hover-color);
+}
+
 /** Footer **/
 .footer {
-    color: var(--footer-color);
+    color: var(--white-color);
     background-color: var(--secondary-background-color);
 }
 .footer .contact-info-address {
-    color: var(--footer-color);
+    color: var(--white-color);
 }
 .footer .contacts-item-link {
     line-height: 1.71;
@@ -147,5 +160,8 @@ h3 {
 }
 .footer .logo-link:hover .blue,
 .footer .logo-link:focus .blue {
-    color: var(--footer-color);
+    color: var(--white-color);
+}
+.contacts-info {
+    font-style: normal;
 }
